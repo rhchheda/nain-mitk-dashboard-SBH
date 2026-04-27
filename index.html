@@ -302,7 +302,7 @@
             // Create buttons for each file
             let buttonsHtml = '';
             fileIds.forEach((id, idx) => {
-                const fileName = `Document ${idx+1}`;
+                const fileName = `Pitch_Deck ${idx+1}`;
                 buttonsHtml += `<button class="file-btn" data-file-id="${id}">📄 ${fileName}</button>`;
             });
             // Preview iframe (first file by default)
@@ -310,7 +310,7 @@
             const previewUrl = `https://drive.google.com/file/d/${firstFileId}/preview`;
             fileSection = `
                 <div class="file-preview-section">
-                    <h3><i class="fas fa-file-alt"></i> Project Files</h3>
+                    <h3><i class="fas fa-file-alt"></i> Project Pitch_Deck</h3>
                     <div class="file-list" id="fileList-${project.sn}">
                         ${buttonsHtml}
                     </div>
